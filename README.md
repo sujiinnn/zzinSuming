@@ -31,3 +31,10 @@ CREATE TABLE community (
   insertDate timestamp not null default current_timestamp -- 글 작성 시간
 );
 ```
+
+## 개발 환경
++ IDE : Apache-NetBeans
++ JDK : zulu 11
++ OS : Windows
++ DB : MySQL 8
++ Tomcat version : 9.0.75
