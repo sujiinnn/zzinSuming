@@ -37,4 +37,8 @@ CREATE TABLE community (
 + JDK : zulu 11
 + OS : Windows
 + DB : MySQL 8
-+ Tomcat version : 9.0.75
++ Tomcat version : 9.0.75 
+
+## 주의사항 (★★★)
+개발 환경이 다를 시 정상 작동하지 않을 수 있습니다. <br>
+jdk 버전과 tomcat 버전은 반드시 동일해야합니다.
