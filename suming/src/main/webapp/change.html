@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>내 정보 수정</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/style2.css">
+
+    </head>
+
+    <body class="img js-fullheight" style="background-color:rgb(243, 206, 229)">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center mb-2">
+                    <br>
+                    <img src = "images\heart.png" width="30" height="30" align="left">
+                    <img src = "images\heart.png" width="30" height="30" align="right">
+                    <h2 class="heading-section">내 정보 수정</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="login-wrap p-0">
+                    <form action="chg.jsp" class="signin-form" method="get" enctype="multipart/form-data">
+
+                        <br>
+                        <div class="form-group">
+                            <label>이름: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                <input type="text" class="form-control" name="id" required></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>비밀번호 변경: &nbsp <input type="password" class="form-control" name="ps" required></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>전화번호: &nbsp <select name="tel" size='1' class="form-control">
+                                    <option value='' selected> --선택--</option>
+                                    <option value='010'>010</option>
+                                    <option value='02'>02</option>
+                                    <option value='051'>051</option>
+                                </select></label>
+
+                            <label> <input type="text" select name="middle"  maxlength="4" size='7' class="form-control">
+                                </select></label>
+
+                            <label> <input type="text" select name="last"  maxlength="4" size='7' class="form-control">
+                                </select></label>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>생년월일: &nbsp <input type="date"  name = year class="form-control">
+                            </label>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>혈액형: &nbsp<select name="ABO" size='1'class="form-control" required>
+                                    <option value = '' selected> --선택--</option>
+                                    <option value = 'A'>A</option>
+                                    <option value = 'B'>B</option>
+                                    <option value = 'AB'>AB</option>
+                                    <option value = 'O'>O</option>
+                                </select>
+                            </label>
+
+                            <label>&nbsp &nbsp &nbsp MBTI: &nbsp <select name="MBTI" size='1'class="form-control" required>
+                                    <option value = '' selected> --선택--</option>
+                                    <option value = 'ENFP'>ENFP</option>
+                                    <option value = 'ENFJ'>ENFJ</option>
+                                    <option value = 'ENTP'>ENTP</option>
+                                    <option value = 'ENTJ'>ENTJ</option>
+                                    <option value = 'ESFJ'>ESFJ</option>
+                                    <option value = 'ESFP'>ESFP</option>
+                                    <option value = 'ESTJ'>ESTJ</option>
+                                    <option value = 'ESTP'>ESTP</option>
+                                    <option value = 'INFP'>INFP</option>
+                                    <option value = 'INFJ'>INFJ</option>
+                                    <option value = 'INTP'>INTP</option>
+                                    <option value = 'INTJ'>INTJ</option>
+                                    <option value = 'ISFJ'>ISFJ</option>
+                                    <option value = 'ISFP'>ISFP</option>
+                                    <option value = 'ISTP'>ISTP</option>
+                                    <option value = 'ISTJ'>ISTJ</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>지역: &nbsp &nbsp &nbsp <select name="country" size='1'class="form-control" required>
+                                    <option value = '' selected> --선택--</option>
+                                    <option value = '부산'>부산</option>
+                                    <option value = '서울'>서울</option>
+                                    <option value = '대구'>대구</option>
+                                    <option value = '전라도'>전라도</option>
+                                </select>
+                            </label>
+
+                            <label> &nbsp &nbsp &nbsp 종교: &nbsp &nbsp &nbsp<select name="mind" size='1'class="form-control" required>
+                                    <option value = '' selected> --선택--</option>
+                                    <option value = '천주교'>천주교</option>
+                                    <option value = '기독교'>기독교</option>
+                                    <option value = '불교'>불교</option>
+                                    <option value = '무교'>무교</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>음주: &nbsp &nbsp &nbsp <select name="alcohol" size='1'class="form-control">
+                                    <option value = '' selected> --선택--</option>
+                                    <option value = '자주'>자주</option>
+                                    <option value = '보통'>보통</option>
+                                    <option value = '가끔'>가끔</option>
+                                    <option value = 'NO'>NO</option>
+                                </select>
+                            </label>
+
+                            <label> &nbsp &nbsp &nbsp 흡연: &nbsp &nbsp &nbsp &nbsp Y <input type="radio" name="YN" required>
+                                &nbsp &nbsp N<input type="radio" name="YN" required> </label>
+                            <br>
+                        </div>
+
+
+                            <div>
+                                사진: <input type="file" name="file" accept="image/*">
+                            </div>
+
+                            <div class="form-group">
+                                <br><br><button type="submit" class="form-control btn btn-primary submit px-3"> 수정 완료 </button>
+                            </div>
+                            <div class="form-group d-md-flex">
+                                <br>
+                            </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>signup</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body class="img js-fullheight" style="background-color: rgb(243, 206, 229)">
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6 text-center mb-5">
+				<br>
+				<img src="images\heart.png" width="30" height="30" align="left">
+				<img src="images\heart.png" width="30" height="30" align="right">
+				<img src="images\signup.png" width="130" height="40" align="top">
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="login-wrap p-0">
+				<form action="signup.jsp" class="signin-form">
+
+
+					<div class="form-group">
+						<label>아이디: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+							<input type="text" class="form-control" name="id" required></label>
+					</div>
+
+					<div class="form-group">
+						<label>패스워드: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+							<input type="password" class="form-control" name="ps1" required></label>
+					</div>
+
+					<div class="form-group">
+						<label>패스워드(확인):
+							<input type="password" class="form-control" name="ps2" required></label>
+					</div>
+
+					<div class="form-group">
+						<label>이름: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+							<input type="text" class="form-control" name="name" required></label>
+					</div>
+
+					<div class="form-group">
+						<label>전화번호: &nbsp <select name="tel" size='1' class="form-control">
+								<option value='' selected> --선택--</option>
+								<option value='010'>010</option>
+								<option value='02'>02</option>
+								<option value='051'>051</option>
+							</select></label>
+
+						<label> <input type="text" select name="middle"  maxlength="4" size='7' class="form-control">
+							</select></label>
+
+						<label> <input type="text" select name="last"  maxlength="4" size='7' class="form-control">
+							</select></label>
+
+					</div>
+					
+					<div class="form-group">
+						<label>생년월일: &nbsp <input type="date"  name = year class="form-control">
+							</label>
+
+					</div>
+
+
+					<div class="form-group">
+						<label>지역: <select name="country" size='1' class="form-control">
+								<option value='' selected> --선택--</option>
+								<option value='부산'>부산</option>
+								<option value='서울'>서울</option>
+								<option value='대구'>대구</option>
+								<option value='전라도'>전라도</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label>성별: &nbsp 남자 <input type="radio" name="man" required>
+							&nbsp &nbsp여자<input type="radio" name="man" required> </label>
+					</div>
+
+
+					<div class="form-group">
+						<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+					</div>
+					<div class="form-group d-md-flex">
+						<br>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
